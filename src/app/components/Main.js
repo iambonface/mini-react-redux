@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-class Main extends Component{
-    render(){
+export const Main = (props) => {
         return(
             <div className="Main">
                 <div className="col-xs-12">
@@ -12,7 +11,7 @@ class Main extends Component{
                     <div className="col-xs-12">
                         <button 
                         className="btn btn-primary"
-                        onClick={() => this.props.changeUsername("Mudiri")}>
+                        onClick={() => props.changeUsername("Mudiri")}>
                             Change Username
                         </button>
                     </div>
@@ -20,8 +19,5 @@ class Main extends Component{
 
             </div>
         );
-    }
 
 }
-
-export default Main;

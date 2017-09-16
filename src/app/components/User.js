@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-class User extends Component{
-    render(){
+export const User = (props) => {
         return(
             <div className="Main row">
                 <div className="col-xs-12">
@@ -10,13 +9,10 @@ class User extends Component{
                 </div>
                 <div className="container">
                     <div className="col-xs-12">
-                        <p>User Name: {this.props.username}</p>
+                        <p>User Name: {props.username}</p>
                     </div>
                 </div>
             </div>
         );
-    }
 
 }
-
-export default User;
