@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { render } from  'react-dom';
 
-import { User } from './components/User';
-import { Main } from './components/Main';
+import User from '../components/User';
+import Main from '../components/Main';
 
 import './App.css';
 
