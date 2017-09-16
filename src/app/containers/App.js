@@ -9,20 +9,16 @@ import './App.css';
 class App extends Component {
     constructor(){
         super();
-        this.state = {
-            username: "Bonface"
-        };
+
     }
     changeUsername = (newName) => {
-        this.setState({
-            username: newName
-        });
+
     }
     render(){
         return(
             <div className="App container">
                 <Main changeUsername={this.changeUsername.bind(this)} />
-                <User username={this.state.username } />
+                <User username="Bonface" />
             </div>
         );
     };
